@@ -1,0 +1,9 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.towhid.healthcare.app.HttpKt.configureHttp
+      - com.towhid.healthcare.app.SerializationKt.configureSerialization
+      - com.towhid.healthcare.app.StatusPagesKt.configureStatusPages
+      - com.towhid.healthcare.app.RoutingKt.configureRouting

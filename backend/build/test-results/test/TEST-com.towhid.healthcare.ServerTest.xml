@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.towhid.healthcare.ServerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-07-12T05:06:35.540Z" hostname="Macmini" time="0.527">
+  <properties/>
+  <testcase name="test root endpoint" classname="com.towhid.healthcare.ServerTest" time="0.525"/>
+  <system-out><![CDATA[2026-07-12 11:06:35.960 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
+2026-07-12 11:06:36.013 [DefaultDispatcher-worker-2 @call-context#3] INFO  io.ktor.test - Application started in 0.063 seconds.
+2026-07-12 11:06:36.014 [DefaultDispatcher-worker-1 @coroutine#5] INFO  io.ktor.test - Responding at http://localhost:80
+2026-07-12 11:06:36.014 [DefaultDispatcher-worker-1 @coroutine#5] INFO  io.ktor.test - Responding at https://localhost:443
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
