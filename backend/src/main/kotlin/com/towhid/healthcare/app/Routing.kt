@@ -6,7 +6,10 @@ import io.ktor.server.response.respond
 import io.ktor.server.routing.get
 import io.ktor.server.routing.routing
 
+import com.towhid.healthcare.infrastructure.database.configureDatabaseHealth
+
 fun Application.configureRouting() {
+    configureDatabaseHealth()
     routing {
         get("/") {
             call.respond(mapOf("hello" to "world"))

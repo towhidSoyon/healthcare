@@ -6,9 +6,11 @@ import io.ktor.server.application.install
 import org.koin.ktor.plugin.Koin
 import org.koin.logger.slf4jLogger
 
+import com.towhid.healthcare.di.databaseModule
+
 fun Application.configureKoin() {
     install(Koin) {
         slf4jLogger()
-        modules(appModule(this@configureKoin))
+        modules(appModule(this@configureKoin), databaseModule)
     }
 }

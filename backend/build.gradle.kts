@@ -29,6 +29,14 @@ dependencies {
     implementation(libs.koin.logger.slf4j)
     implementation(libs.dotenv)
 
+    implementation(libs.exposed.core)
+    implementation(libs.exposed.dao)
+    implementation(libs.exposed.jdbc)
+    implementation(libs.hikaricp)
+    implementation(libs.postgresql)
+    implementation(libs.flyway.core)
+    implementation(libs.flyway.database.postgresql)
+
     testImplementation(kotlin("test"))
     testImplementation(ktorLibs.server.testHost)
 }
