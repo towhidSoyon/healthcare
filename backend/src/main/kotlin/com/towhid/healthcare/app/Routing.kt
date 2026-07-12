@@ -1,16 +1,18 @@
 package com.towhid.healthcare.app
 
-import io.ktor.server.application.*
-import io.ktor.server.response.*
-import io.ktor.server.routing.*
+import com.towhid.healthcare.core.model.HealthResponse
+import io.ktor.server.application.Application
+import io.ktor.server.response.respond
+import io.ktor.server.routing.get
+import io.ktor.server.routing.routing
 
 fun Application.configureRouting() {
     routing {
         get("/") {
-            call.respondText("Hello, World!")
-        }
-        get("/json/kotlinx-serialization") {
             call.respond(mapOf("hello" to "world"))
+        }
+        get("/health") {
+            call.respond(HealthResponse())
         }
     }
 }

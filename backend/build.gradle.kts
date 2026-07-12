@@ -25,6 +25,9 @@ dependencies {
     implementation(ktorLibs.server.netty)
     implementation(ktorLibs.server.statusPages)
     implementation(libs.logback.classic)
+    implementation(libs.koin.ktor)
+    implementation(libs.koin.logger.slf4j)
+    implementation(libs.dotenv)
 
     testImplementation(kotlin("test"))
     testImplementation(ktorLibs.server.testHost)

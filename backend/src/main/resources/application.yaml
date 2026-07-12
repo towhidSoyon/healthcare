@@ -3,6 +3,8 @@ ktor:
     port: 8080
   application:
     modules:
+      - com.towhid.healthcare.app.KoinKt.configureKoin
+      - com.towhid.healthcare.app.LoggingKt.configureLogging
       - com.towhid.healthcare.app.HttpKt.configureHttp
       - com.towhid.healthcare.app.SerializationKt.configureSerialization
       - com.towhid.healthcare.app.StatusPagesKt.configureStatusPages
